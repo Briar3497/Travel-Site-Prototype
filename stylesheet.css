@@ -1,0 +1,164 @@
+body {
+    background-color: lightgrey;
+}
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: auto 450px;
+    grid-template-rows: 150px auto;
+    background-color: darkgrey;
+    height: 700px;
+    ul {
+        padding: 10px;
+        flex-direction: row;
+        list-style-type: none;
+        height: fit-content;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.navigation {
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.right-side {
+    justify-content: flex-end;
+    justify-self: flex-end;
+}
+
+.left-side {
+    justify-content: flex-start;
+}
+
+.bottom {
+    align-self: end;
+}
+
+.info {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    align-self: center;
+}
+
+.info-nav {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    align-self: center;
+    width: 40%;
+    height: fit-content;
+}
+
+.info-img {
+    width: 40%;
+    height: auto;
+    margin: 10px;
+    align-self: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.logo {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+}
+
+.even-space {
+    justify-content: space-between;
+}
+
+.container {
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.learn-more {
+    margin: 10px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 5px grey;
+    background-color: white;
+    align-self: center;
+}
+
+#search {
+    width: 18px;
+    height: 18px;
+}
+
+.chevron-down {
+    display: flex;
+    width: 18px;
+    height: 9px;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    padding: 10px;
+    margin: 10px;
+    font-size: 25px;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-bar {
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-template-rows: auto 50px;
+    grid-template-areas:
+        "logo nav"
+        "copy copy";
+    background-color: darkgrey;
+    height: 300px;
+}
+
+#logo {
+    grid-area: logo;
+    p {
+        padding: 30px;
+        margin: 20px;
+        text-align: center;
+        background-color: white;
+    }
+    
+}
+
+#nav {
+    grid-area: nav;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    th {
+        border-bottom: 2px solid black;
+    }
+}
+
+#copy {
+    grid-area: copy;
+    padding: 10px;
+    margin: 10px;
+    align-self: center;
+}
