@@ -1,5 +1,7 @@
 body {
     background-color: lightgrey;
+    margin: 0px;
+    padding: 0px;
 }
 
 .nav-bar {
@@ -7,7 +9,7 @@ body {
     grid-template-columns: auto 450px;
     grid-template-rows: 150px auto;
     background-color: darkgrey;
-    height: 700px;
+    height: 100vh;
     ul {
         padding: 10px;
         flex-direction: row;
@@ -15,6 +17,33 @@ body {
         height: fit-content;
     }
 }
+
+.nav-bar-down {
+    display: grid;
+    grid-template-areas:
+        "top-nav close"
+        "select-nav drop-down-img";
+    grid-template-rows: 150px auto;
+    background-color: slategray;
+    height: 100vh;
+    width: 99vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    ul {
+        padding: 10px;
+        flex-direction: row;
+        list-style-type: none;
+        height: fit-content;
+    }
+}
+
+.nav-img {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;}
 
 .flex {
     display: flex;
@@ -47,11 +76,14 @@ body {
     align-self: end;
 }
 
+.center {
+    align-self: center;
+}
+
 .info {
     padding: 10px;
     margin: 10px;
     text-align: center;
-    align-self: center;
 }
 
 .info-nav {
@@ -116,6 +148,21 @@ body {
     align-items: center;
 }
 
+.chevron-up {
+    display: flex;
+    width: 18px;
+    height: 9px;
+    justify-content: center;
+    align-items: start;
+}
+
+#close-btn {
+    padding: 10px 40px 10px 10px;
+    margin: 10px;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
 #title {
     padding: 10px;
     margin: 10px;
@@ -161,4 +208,61 @@ body {
     padding: 10px;
     margin: 10px;
     align-self: center;
+}
+
+.hide {
+    display: none;
+}
+
+li button {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+}
+
+.drop-down-img {
+    justify-self: center;
+    width: 60%;
+    height: 60%;
+    margin: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.drop-down {
+    text-align: center;
+    li {
+        padding: 10px;
+        margin: 10px;
+        font-size: 20px;
+        h1 {
+            border-bottom: 1px solid black;
+        }
+    }
+    
+    
+}
+
+#top-nav {
+    grid-area: top-nav;
+}
+
+#close {
+    grid-area: close;
+}
+
+#select-nav {
+    grid-area: select-nav;
+    ul {
+        align-items: center;
+        text-align: center;
+        justify-self: center;
+    }
+}
+
+#drop-dowm-img {
+    grid-area: drop-down-img;
+
 }

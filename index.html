@@ -10,16 +10,16 @@
             <div class="nav-bar">
                 <ul class="left-side even-space flex">
                     <li class="logo">Logo</li>
-                    <li class="navigation flex">Things to do<div class="chevron-down">&#x2304;</div></li>
-                    <li class="navigation flex">Accommodations<div class="chevron-down">&#x2304;</div></li>
-                    <li class="navigation flex">Travel Plans<div class="chevron-down">&#x2304;</div></li>
-                    <li class="navigation flex">FAQ<div class="chevron-down">&#x2304;</div></li>
+                    <li class="navigation flex"><button id="things-to-do" class="open-nav">Things to do</button><div class="chevron-down">&#x2304;</div></li>
+                    <li class="navigation flex"><button id="accommodations" class="open-nav">Accommodations</button><div class="chevron-down">&#x2304;</div></li>
+                    <li class="navigation flex"><button id="travel-plans" class="open-nav">Travel Plans</button><div class="chevron-down">&#x2304;</div></li>
+                    <li class="navigation flex"><button id="faq" class="open-nav">FAQ</button><div class="chevron-down">&#x2304;</div></li>
                 </ul>
                 <ul class="right-side flex">
                     <li id="search" class="navigation">
                         <svg class="icon search" role="img" aria-label="open search" viewBox="0 0 30 32" xmlns="http://www.w3.org/2000/svg">
-                        <title>open search</title>
-                        <path d="M20.571 15.143q0-3.304-2.348-5.652t-5.652-2.348-5.652 2.348-2.348 5.652 2.348 5.652 5.652 2.348 5.652-2.348 2.348-5.652zM29.714 30q0 0.929-0.679 1.607t-1.607 0.679q-0.964 0-1.607-0.679l-6.125-6.107q-3.196 2.214-7.125 2.214-2.554 0-4.884-0.991t-4.018-2.679-2.679-4.018-0.991-4.884 0.991-4.884 2.679-4.018 4.018-2.679 4.884-0.991 4.884 0.991 4.018 2.679 2.679 4.018 0.991 4.884q0 3.929-2.214 7.125l6.125 6.125q0.661 0.661 0.661 1.607z"></path>
+                            <title>open search</title>
+                            <path d="M20.571 15.143q0-3.304-2.348-5.652t-5.652-2.348-5.652 2.348-2.348 5.652 2.348 5.652 5.652 2.348 5.652-2.348 2.348-5.652zM29.714 30q0 0.929-0.679 1.607t-1.607 0.679q-0.964 0-1.607-0.679l-6.125-6.107q-3.196 2.214-7.125 2.214-2.554 0-4.884-0.991t-4.018-2.679-2.679-4.018-0.991-4.884 0.991-4.884 2.679-4.018 4.018-2.679 4.884-0.991 4.884 0.991 4.018 2.679 2.679 4.018 0.991 4.884q0 3.929-2.214 7.125l6.125 6.125q0.661 0.661 0.661 1.607z"></path>
                         </svg>
                     </li>
                     <li class="navigation flex">Sign in / Create account</li>
@@ -35,6 +35,54 @@
                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                             cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                     <button class="learn-more">Learn more</button>
+                </div>
+            </div>
+            <div>
+                <div id="nav-bar-down" class="nav-bar-down hide">
+                    <ul id="top-nav" class="left-side even-space flex">
+                        <li class="logo">Logo</li>
+                        <li class="navigation flex">Things to do<div id="things-to-do-chev" class="chevron-up">&#x2303;</div></li>
+                        <li class="navigation flex">Accommodations<div id="accommodations-chev" class="chevron-down">&#x2304;</div></li>
+                        <li class="navigation flex">Travel Plans<div id="travel-plans-chev" class="chevron-down">&#x2304;</div></li>
+                        <li class="navigation flex">FAQ<div id="faq-chev" class="chevron-down">&#x2304;</div></li>
+                    </ul>
+                    <ul id="close" class="right-side flex">
+                        <li><button id="close-btn">Close X</button></li>
+                    </ul>
+                    <ul id="select-nav">
+                        <li id="things-to-do-options" class="nav-drop-down hide">
+                            <ul class="drop-down">
+                                <li><h1 class="title">Things to Do</h1></li>
+                                <li>Restaurants</li>
+                                <li>Sightseeing</li>
+                                <li>Entertainment</li>
+                            </ul>
+                        </li>
+                        <li id="accommodations-options" class="nav-drop-down hide">
+                            <ul class="drop-down">
+                                <li><h1 class="title">Accommodations</h1></li>
+                                <li>Hotels</li>
+                                <li>Bed & Breakfast</li>
+                                <li>Private Rentals</li>
+                            </ul>
+                        </li>
+                        <li id="travel-plans-options" class="nav-drop-down hide">
+                            <ul class="drop-down">
+                                <li><h1 class="title">Travel Plans</h1></li>
+                                <li>Flights</li>
+                                <li>Cruises</li>
+                                <li>Car Rentals</li>
+                                <li>Public Transportation</li>
+                            </ul>
+                        </li>
+                        <li id="faq-options" class="nav-drop-down hide">
+                            <ul class="drop-down">
+                                <li><h1 class="title">FAQ</h1></li>
+                                <li>Island Information & FAQ</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div id="drop-down-img" class="flex"><img class="drop-down-img" src="picture.png" alt="placeholder"></div>
                 </div>
             </div>
         </header>
@@ -99,4 +147,5 @@
                 <p>Copyright © 2023 Taniti. All rights reserved.</p>
             </div>
         </footer>
+        <script src="javascript.js"></script>
     </body>
