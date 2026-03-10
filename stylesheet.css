@@ -207,7 +207,7 @@ body {
     height: 300px;
 }
 
-#logo {
+.logo {
     grid-area: logo;
     p {
         padding: 30px;
@@ -218,7 +218,7 @@ body {
     
 }
 
-#nav {
+.nav {
     grid-area: nav;
     padding: 10px;
     margin: 10px;
@@ -228,7 +228,7 @@ body {
     }
 }
 
-#copy {
+.copy {
     grid-area: copy;
     padding: 10px;
     margin: 10px;
@@ -247,7 +247,7 @@ li button {
     cursor: pointer;
 }
 
-.drop-down-img {
+.secondary-img {
     justify-self: center;
     width: 60%;
     min-width: min(60%, 300px);
@@ -291,7 +291,7 @@ li button {
     }
 }
 
-#drop-dowm-img {
+.drop-down-img {
     grid-area: drop-down-img;
 
 }
@@ -310,11 +310,11 @@ li button {
     outline: none;
 }
 
-li a {
+a {
     text-decoration: none;
     color: black;
 }
 
-li a:hover {
+a:hover {
     text-decoration: underline;
 }
