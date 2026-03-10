@@ -7,28 +7,37 @@
     </head>
     <body>
         <header>
-            <div class="nav-bar">
-                <ul class="left-side even-space flex">
+            <div class="nav-bar home">
+                <ul class="top-nav left-side even-space flex">
                     <li class="logo">Logo</li>
-                    <li class="navigation flex"><button id="things-to-do" class="open-nav">Things to do</button><div class="chevron-down">&#x2304;</div></li>
-                    <li class="navigation flex"><button id="accommodations" class="open-nav">Accommodations</button><div class="chevron-down">&#x2304;</div></li>
-                    <li class="navigation flex"><button id="travel-plans" class="open-nav">Travel Plans</button><div class="chevron-down">&#x2304;</div></li>
-                    <li class="navigation flex"><button id="faq" class="open-nav">FAQ</button><div class="chevron-down">&#x2304;</div></li>
+                    <li class="navigation flex"><button class="things-to-do" class="open-nav">Things to do</button><div class="chevron-down">&#x2304;</div></li>
+                    <li class="navigation flex"><button class="accommodations" class="open-nav">Accommodations</button><div class="chevron-down">&#x2304;</div></li>
+                    <li class="navigation flex"><button class="travel-plans" class="open-nav">Travel Plans</button><div class="chevron-down">&#x2304;</div></li>
+                    <li class="navigation flex"><button class="faq" class="open-nav">FAQ</button><div class="chevron-down">&#x2304;</div></li>
                 </ul>
-                <ul class="right-side flex">
-                    <li id="search" class="navigation">
+                <ul class="extra right-side flex">
+                    <li class="search" class="navigation">
                         <svg class="icon search" role="img" aria-label="open search" viewBox="0 0 30 32" xmlns="http://www.w3.org/2000/svg">
                             <title>open search</title>
                             <path d="M20.571 15.143q0-3.304-2.348-5.652t-5.652-2.348-5.652 2.348-2.348 5.652 2.348 5.652 5.652 2.348 5.652-2.348 2.348-5.652zM29.714 30q0 0.929-0.679 1.607t-1.607 0.679q-0.964 0-1.607-0.679l-6.125-6.107q-3.196 2.214-7.125 2.214-2.554 0-4.884-0.991t-4.018-2.679-2.679-4.018-0.991-4.884 0.991-4.884 2.679-4.018 4.018-2.679 4.884-0.991 4.884 0.991 4.018 2.679 2.679 4.018 0.991 4.884q0 3.929-2.214 7.125l6.125 6.125q0.661 0.661 0.661 1.607z"></path>
                         </svg>
                     </li>
                     <li class="navigation flex">Sign in / Create account</li>
-                    <li class="navigation flex">English</li>
+                    <li class="navigation flex">
+                        <label for="language"></label>
+                        <select name="language" class="language">
+                            <option value="english">English</option>
+                            <option value="spanish">Spanish</option>
+                            <option value="french">French</option>
+                            <option value="german">German</option>
+                            <option value="italian">Italian</option>
+                        </select>
+                    </li>
                 </ul>
-                <div class="flex" id="title">
+                <div class="home-title flex title">
                     <h1>Come explore Taniti!</h1>
                 </div>
-                <div class="flex column bottom info">
+                <div class="home-info flex column bottom info">
                     <p>Discover the best things to do, places to stay, and ways to get around. "Lorem ipsum dolor sit amet, consectetur
                          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
@@ -38,47 +47,47 @@
                 </div>
             </div>
             <div>
-                <div id="nav-bar-down" class="nav-bar-down hide">
-                    <ul id="top-nav" class="left-side even-space flex">
+                <div class="nav-bar-down hide">
+                    <ul class="top-nav left-side even-space flex">
                         <li class="logo">Logo</li>
-                        <li class="navigation flex">Things to do<div id="things-to-do-chev" class="chevron-up">&#x2303;</div></li>
-                        <li class="navigation flex">Accommodations<div id="accommodations-chev" class="chevron-down">&#x2304;</div></li>
-                        <li class="navigation flex">Travel Plans<div id="travel-plans-chev" class="chevron-down">&#x2304;</div></li>
-                        <li class="navigation flex">FAQ<div id="faq-chev" class="chevron-down">&#x2304;</div></li>
+                        <li class="navigation flex">Things to do<div class="things-to-do-chev chevron-up">&#x2303;</div></li>
+                        <li class="navigation flex">Accommodations<div class="accommodations-chev chevron-down">&#x2304;</div></li>
+                        <li class="navigation flex">Travel Plans<div class="travel-plans-chev chevron-down">&#x2304;</div></li>
+                        <li class="navigation flex">FAQ<div class="faq-chev chevron-down">&#x2304;</div></li>
                     </ul>
-                    <ul id="close" class="right-side flex">
-                        <li><button id="close-btn">Close X</button></li>
+                    <ul class="close right-side flex">
+                        <li><button class="close-btn">Close X</button></li>
                     </ul>
-                    <ul id="select-nav">
-                        <li id="things-to-do-options" class="nav-drop-down hide">
+                    <ul class="select-nav">
+                        <li class="things-to-do-options nav-drop-down hide">
                             <ul class="drop-down">
                                 <li><h1 class="title">Things to Do</h1></li>
-                                <li>Restaurants</li>
-                                <li>Sightseeing</li>
-                                <li>Entertainment</li>
+                                <li><a href="things-to-do.html">Restaurants</a></li>
+                                <li><a href="things-to-do.html">Sightseeing</a></li>
+                                <li><a href="things-to-do.html">Entertainment</a></li>
                             </ul>
                         </li>
-                        <li id="accommodations-options" class="nav-drop-down hide">
+                        <li class="accommodations-options nav-drop-down hide">
                             <ul class="drop-down">
                                 <li><h1 class="title">Accommodations</h1></li>
-                                <li>Hotels</li>
-                                <li>Bed & Breakfast</li>
-                                <li>Private Rentals</li>
+                                <li><a href="accommodations.html">Hotels</a></li>
+                                <li><a href="accommodations.html">Bed & Breakfast</a></li>
+                                <li><a href="accommodations.html">Private Rentals</a></li>
                             </ul>
                         </li>
-                        <li id="travel-plans-options" class="nav-drop-down hide">
+                        <li class="travel-plans-options nav-drop-down hide">
                             <ul class="drop-down">
                                 <li><h1 class="title">Travel Plans</h1></li>
-                                <li>Flights</li>
-                                <li>Cruises</li>
-                                <li>Car Rentals</li>
-                                <li>Public Transportation</li>
+                                <li><a href="travel.plans.html">Flights</a></li>
+                                <li><a href="travel.plans.html">Cruises</a></li>
+                                <li><a href="travel-plans.html">Car Rentals</a></li>
+                                <li><a href="travel-plans.html">Public Transportation</a></li>
                             </ul>
                         </li>
-                        <li id="faq-options" class="nav-drop-down hide">
+                        <li class="faq-options nav-drop-down hide">
                             <ul class="drop-down">
                                 <li><h1 class="title">FAQ</h1></li>
-                                <li>Island Information & FAQ</li>
+                                <li><a href="faq.html">Island Information & FAQ</a></li>
                             </ul>
                         </li>
                     </ul>

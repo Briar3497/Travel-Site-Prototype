@@ -2,14 +2,17 @@ body {
     background-color: lightgrey;
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-bar {
     display: grid;
-    grid-template-columns: auto 450px;
+    grid-template-areas:
+        "top-nav extra"
+        "home-title home-info";
     grid-template-rows: 150px auto;
+    grid-template-columns: auto 600px;
     background-color: darkgrey;
-    height: 100vh;
     ul {
         padding: 10px;
         flex-direction: row;
@@ -18,12 +21,30 @@ body {
     }
 }
 
+.extra {
+    grid-area: extra;
+}
+
+.home-title {
+    grid-area: home-title;
+}
+
+.home-info {
+    grid-area: home-info;
+}
+
+.home {
+    height: 100vh;
+    grid-template-rows: 150px auto;
+}
+
 .nav-bar-down {
     display: grid;
     grid-template-areas:
         "top-nav close"
         "select-nav drop-down-img";
     grid-template-rows: 150px auto;
+    grid-template-columns: auto 600px;
     background-color: slategray;
     height: 100vh;
     width: 99vw;
@@ -133,9 +154,10 @@ body {
     box-shadow: 3px 3px 5px grey;
     background-color: white;
     align-self: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-#search {
+.search {
     width: 18px;
     height: 18px;
 }
@@ -156,19 +178,22 @@ body {
     align-items: start;
 }
 
-#close-btn {
+.close-btn {
     padding: 10px 40px 10px 10px;
     margin: 10px;
     text-decoration: underline;
     font-size: 20px;
 }
 
-#title {
+.title {
     padding: 10px;
     margin: 10px;
     font-size: 25px;
     justify-content: center;
     text-align: center;
+    h1 {
+        padding-top: 60px;
+    }
 }
 
 .footer-bar {
@@ -225,7 +250,10 @@ li button {
 .drop-down-img {
     justify-self: center;
     width: 60%;
+    min-width: min(60%, 300px);
+    min-height: min(60%, 300px);
     height: 60%;
+    aspect-ratio: 1/1;
     margin: 30px;
     border: 2px solid black;
     border-radius: 10px;
@@ -245,15 +273,16 @@ li button {
     
 }
 
-#top-nav {
+.top-nav {
     grid-area: top-nav;
 }
 
-#close {
+.close {
     grid-area: close;
+    width: 450px;
 }
 
-#select-nav {
+.select-nav {
     grid-area: select-nav;
     ul {
         align-items: center;
@@ -265,4 +294,27 @@ li button {
 #drop-dowm-img {
     grid-area: drop-down-img;
 
+}
+
+.language {
+    background-color: darkgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    font-size: 16px;
+    option {
+        background-color: white;    
+    }
+}
+
+.language:focus {
+    outline: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    text-decoration: underline;
 }
