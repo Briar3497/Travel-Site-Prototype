@@ -3,6 +3,17 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+}
+
+section {
+    padding: 10px;
+    margin: 10px;
 }
 
 .nav-bar {
@@ -126,13 +137,14 @@ body {
 }
 
 .logo {
-    background-color: white;
+    background-color: lightgrey;
     padding: 10px;
     margin: 10px;
     width: 50px;
     height: 50px;
     text-align: center;
     align-content: center;
+    grid-area: logo;
 }
 
 .even-space {
@@ -159,6 +171,7 @@ body {
 
 .search {
     width: 18px;
+    padding: 5px 10px 5px 5px;
     height: 18px;
 }
 
@@ -188,12 +201,9 @@ body {
 .title {
     padding: 10px;
     margin: 10px;
-    font-size: 25px;
     justify-content: center;
     text-align: center;
-    h1 {
-        padding-top: 60px;
-    }
+    padding-top: 60px;
 }
 
 .footer-bar {
@@ -205,17 +215,6 @@ body {
         "copy copy";
     background-color: darkgrey;
     height: 300px;
-}
-
-.logo {
-    grid-area: logo;
-    p {
-        padding: 30px;
-        margin: 20px;
-        text-align: center;
-        background-color: white;
-    }
-    
 }
 
 .nav {
@@ -244,7 +243,11 @@ li button {
     border: none;
     padding: 0;
     font: inherit;
+}
+
+li button:hover, li a:hover, select:hover, .search:hover, .sign-in:hover {
     cursor: pointer;
+    color: white;
 }
 
 .secondary-img {
@@ -302,7 +305,7 @@ li button {
     border: none;
     font-size: 16px;
     option {
-        background-color: white;    
+        background-color: lightgrey;    
     }
 }
 
@@ -315,6 +318,43 @@ a {
     color: black;
 }
 
-a:hover {
+table {
+    border-collapse: collapse;
+    margin: 20px 20px 50px 20px;
+    width: 100%;
+}
+
+.table-img {
+    width: 15%;
+    height: auto;
+}
+
+.table-name {
+    text-align: left;
+    font-size: 20px;
+    padding: 10px 10px 5px 10px;
+    margin: 10px;
     text-decoration: underline;
+}
+
+.table-desc {
+    text-align: left;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.table-address {
+    text-align: left;
+    width: 22%;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.table-phone {
+    text-align: left;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
 }
