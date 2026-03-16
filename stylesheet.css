@@ -323,13 +323,26 @@ a {
 
 table {
     border-collapse: collapse;
+    margin: 20px;
+}
+
+.table {
+    border-collapse: none;
     margin: 20px 20px 50px 20px;
     width: 100%;
+    height: fit-content;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
 }
 
 .table-img {
-    width: 15%;
-    height: auto;
+    width: 230px;
+    height: 230px;
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .table-name {
@@ -345,6 +358,7 @@ table {
     font-size: 16px;
     padding: 10px;
     margin: 10px;
+    width: 700px;
 }
 
 .table-address {
@@ -371,4 +385,58 @@ footer {
     margin: 0px;
     padding: 10px;
     width: 97.65vw;
+}
+
+form {
+    margin: 40px 40px 80px 40px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+    width: 50vw;
+    justify-self: center;
+    button {
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+    }
+    input, label {
+        padding: 10px;
+        margin: 10px;
+    }
+    fieldset {
+        background-color: rgb(234, 233, 233);
+        border-radius: 5px;
+    }
+    input[type="date"], input[type="number"], input[type="text"] {
+        border-radius: 5px;
+    }
+}
+
+.flight {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    margin: 20px 20px 50px 20px;
+}
+
+.option-date, .option-book, .table-address {
+    text-align: center;
+    border-left: 1px solid black;
+    h3 {
+        padding: 10px;
+        margin: 10px;
+        text-decoration: underline;
+    }
+}
+
+.option-book {
+    width: 150px;
+}
+
+table a:hover {
+    color: darkgrey;
+    cursor: pointer;
+    text-decoration: underline;
 }

@@ -88,12 +88,468 @@
             <h1 class="title">Travel Plans</h1>
             <section>
                 <h2 id="flights">Flights</h2>
+                <form id="flight-form">
+                    <fieldset>
+                        <legend>Ticket Type</legend>
+                        <label for="one-way">One Way</label>
+                        <input id="one-way" type="radio" name="ticket-type" value="one-way">
+
+                        <label for="round-trip">Round Trip</label>
+                        <input id="round-trip" type="radio" name="ticket-type" value="round-trip">
+
+                        <label for="travelers">Number of Travelers</label>
+                        <input type="number" id="travelers" min="1" value="1" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Travel Dates</legend>
+                        <label for="start-date"></label>
+                        <input type="date" id="start-date" required>
+
+                        <label for="end-date"></label>
+                        <input type="date" id="end-date">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Class</legend>
+                        <label for="economy">Economy</label>
+                        <input id="economy" type="radio" name="class" value="economy">
+
+                        <label for="business">Business</label>
+                        <input id="business" type="radio" name="class" value="business">
+
+                        <label for="first-class">First Class</label>
+                        <input id="first-class" type="radio" name="class" value="first-class">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Airports</legend>
+                        <label for="departure-airport">Departure Airport</label>
+                        <input type="text" id="departure-airport" placeholder="ex. JFK, LAX, etc." required>
+
+                        <label for="arrival-airport">Arrival Airport</label>
+                        <input type="text" id="arrival-airport" placeholder="ex. JFK, LAX, etc." required>
+                    </fieldset>
+                    <button id="flight-search" type="submit">Find Available Flights!</button>
+                </form>
+                <table class="flight hide table">
+                    <tr>
+                        <td rowspan="2" class="table-img"><img src="picture.png" alt="placeholder"></td>
+                        <th class="table-name">Available Flight</th>
+                        <td rowspan="2" class="option-date">
+                            <h3>Departure Time</h3>
+                            <p >Date: ex. June 1, 2024</p>
+                            <p>Time: ex. 8:00 AM</p>
+                        </td>
+                        <td rowspan="2" class="option-book">
+                            <a href="#">Book Now</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-desc">
+                            <p>Airline: ex. Delta, American, etc.</p>
+                            <p>Flight Class: ex. Economy, Business, First</p>
+                            <p>Flight time: ex. 3h 45m</p>
+                            <p>Price: $$$$$$$</p>
+                        </td>
+                    </tr>
+                </table>
+                <table class="flight hide table">
+                    <tr>
+                        <td rowspan="2" class="table-img"><img src="picture.png" alt="placeholder"></td>
+                        <th class="table-name">Available Flight</th>
+                        <td rowspan="2" class="option-date">
+                            <h3>Departure Time</h3>
+                            <p >Date: ex. June 1, 2024</p>
+                            <p>Time: ex. 8:00 AM</p>
+                        </td>
+                        <td rowspan="2" class="option-book">
+                            <a href="#">Book Now</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-desc">
+                            <p>Airline: ex. Delta, American, etc.</p>
+                            <p>Flight Class: ex. Economy, Business, First</p>
+                            <p>Flight time: ex. 3h 45m</p>
+                            <p>Price: $$$$$$$</p>
+                        </td>
+                    </tr>
+                </table>
+                <table class="flight hide table">
+                    <tr>
+                        <td rowspan="2" class="table-img"><img src="picture.png" alt="placeholder"></td>
+                        <th class="table-name">Available Flight</th>
+                        <td rowspan="2" class="option-date">
+                            <h3>Departure Time</h3>
+                            <p >Date: ex. June 1, 2024</p>
+                            <p>Time: ex. 8:00 AM</p>
+                        </td>
+                        <td rowspan="2" class="option-book">
+                            <a href="#">Book Now</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-desc">
+                            <p>Airline: ex. Delta, American, etc.</p>
+                            <p>Flight Class: ex. Economy, Business, First</p>
+                            <p>Flight time: ex. 3h 45m</p>
+                            <p>Price: $$$$$$$</p>
+                        </td>
+                    </tr>
+                </table>
+                <table class="flight hide table">
+                    <tr>
+                        <td rowspan="2" class="table-img"><img src="picture.png" alt="placeholder"></td>
+                        <th class="table-name">Available Flight</th>
+                        <td rowspan="2" class="option-date">
+                            <h3>Departure Time</h3>
+                            <p >Date: ex. June 1, 2024</p>
+                            <p>Time: ex. 8:00 AM</p>
+                        </td>
+                        <td rowspan="2" class="option-book">
+                            <a href="#">Book Now</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-desc">
+                            <p>Airline: ex. Delta, American, etc.</p>
+                            <p>Flight Class: ex. Economy, Business, First</p>
+                            <p>Flight time: ex. 3h 45m</p>
+                            <p>Price: $$$$$$$</p>
+                        </td>
+                    </tr>
+                </table>
+                    <table class="flight hide table">
+                    <tr>
+                        <td rowspan="2" class="table-img"><img src="picture.png" alt="placeholder"></td>
+                        <th class="table-name">Available Flight</th>
+                        <td rowspan="2" class="option-date">
+                            <h3>Departure Time</h3>
+                            <p >Date: ex. June 1, 2024</p>
+                            <p>Time: ex. 8:00 AM</p>
+                        </td>
+                        <td rowspan="2" class="option-book">
+                            <a href="#">Book Now</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-desc">
+                            <p>Airline: ex. Delta, American, etc.</p>
+                            <p>Flight Class: ex. Economy, Business, First</p>
+                            <p>Flight time: ex. 3h 45m</p>
+                            <p>Price: $$$$$$$</p>
+                        </td>
+                    </tr>
+                </table>
+                <table class="flight hide table">
+                    <tr>
+                        <td rowspan="2" class="table-img"><img src="picture.png" alt="placeholder"></td>
+                        <th class="table-name">Available Flight</th>
+                        <td rowspan="2" class="option-date">
+                            <h3>Departure Time</h3>
+                            <p >Date: ex. June 1, 2024</p>
+                            <p>Time: ex. 8:00 AM</p>
+                        </td>
+                        <td rowspan="2" class="option-book">
+                            <a href="#">Book Now</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-desc">
+                            <p>Airline: ex. Delta, American, etc.</p>
+                            <p>Flight Class: ex. Economy, Business, First</p>
+                            <p>Flight time: ex. 3h 45m</p>
+                            <p>Price: $$$$$$$</p>
+                        </td>
+                    </tr>
+                </table>
             </section>
             <section>
                 <h2 id="cruises">Cruises</h2>
+                <form id="cruise-form">
+                    <fieldset>
+                        <legend>Ticket Type</legend>
+                        <label for="travelers">Number of Guests</label>
+                        <input type="number" id="travelers" min="1" value="1" required>
+
+                        <label for="cruise-line">Cruise Line</label>
+                        <input type="text" id="cruise-line" placeholder="ex. Carnival, Royal Caribbean, etc." required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Travel Dates</legend>
+                        <label for="start-date"></label>
+                        <input type="date" id="start-date" required>
+
+                        <label for="end-date"></label>
+                        <input type="date" id="end-date">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Cabin Class</legend>
+                        <label for="interior">Interior</label>
+                        <input id="interior" type="radio" name="class" value="interior">
+
+                        <label for="ocean-view">Ocean View</label>
+                        <input id="ocean-view" type="radio" name="class" value="ocean-view">
+
+                        <label for="balcony">Balcony</label>
+                        <input id="balcony" type="radio" name="class" value="balcony">
+
+                        <label for="suite">Suite</label>
+                        <input id="suite" type="radio" name="class" value="suite">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Ports</legend>
+                        <label for="departure-port">Departure Port</label>
+                        <input type="text" id="departure-port" placeholder="ex. JFK, LAX, etc." required>
+
+                        <label for="arrival-port">Arrival Port</label>
+                        <input type="text" id="arrival-port" placeholder="ex. JFK, LAX, etc." required>
+                    </fieldset>
+                    <button id="cruise-search" type="submit">Find Available Cruises!</button>
+                </form>
+                <table class="cruise hide table">
+                    <tr>
+                        <td rowspan="2" class="table-img"><img src="picture.png" alt="placeholder"></td>
+                        <th colspan="2" class="table-name">Available Cruise</th>
+                        <td rowspan="2" class="option-date">
+                            <h3>Departure Time</h3>
+                            <p >Date: ex. June 1, 2024</p>
+                            <p>Time: ex. 8:00 AM</p>
+                        </td>
+                        <td rowspan="2" class="option-book">
+                            <a href="#">Book Now</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-desc">
+                            <p>
+                                Description of Available Cruise. Lorum ipsum dolor sit amet, consectetur adipiscing elit. Lorum ipsum 
+                                dolor sit amet, consectetur adipiscing elit. Lorum ipsum dolor sit amet, consectetur adipiscing elit. Lorum ipsum 
+                                dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <p>Cruise Line: ex. Carnival, Royal Caribbean, etc.</p>
+                            <p>Cabin type: ex. Interior, Ocean View, Balcony, Suite</p>
+                            <p>Price: $$$$$$$</p>
+                        </td>
+                    </tr>
+                </table>
+                <table class="cruise hide table">
+                    <tr>
+                        <td rowspan="2" class="table-img"><img src="picture.png" alt="placeholder"></td>
+                        <th colspan="2" class="table-name">Available Cruise</th>
+                        <td rowspan="2" class="option-date">
+                            <h3>Departure Time</h3>
+                            <p >Date: ex. June 1, 2024</p>
+                            <p>Time: ex. 8:00 AM</p>
+                        </td>
+                        <td rowspan="2" class="option-book">
+                            <a href="#">Book Now</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-desc">
+                            <p>
+                                Description of Available Cruise. Lorum ipsum dolor sit amet, consectetur adipiscing elit. Lorum ipsum 
+                                dolor sit amet, consectetur adipiscing elit. Lorum ipsum dolor sit amet, consectetur adipiscing elit. Lorum ipsum 
+                                dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <p>Cruise Line: ex. Carnival, Royal Caribbean, etc.</p>
+                            <p>Cabin type: ex. Interior, Ocean View, Balcony, Suite</p>
+                            <p>Price: $$$$$$$</p>
+                        </td>
+                    </tr>
+                </table>
+                <table class="cruise hide table">
+                    <tr>
+                        <td rowspan="2" class="table-img"><img src="picture.png" alt="placeholder"></td>
+                        <th colspan="2" class="table-name">Available Cruise</th>
+                        <td rowspan="2" class="option-date">
+                            <h3>Departure Time</h3>
+                            <p >Date: ex. June 1, 2024</p>
+                            <p>Time: ex. 8:00 AM</p>
+                        </td>
+                        <td rowspan="2" class="option-book">
+                            <a href="#">Book Now</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-desc">
+                            <p>
+                                Description of Available Cruise. Lorum ipsum dolor sit amet, consectetur adipiscing elit. Lorum ipsum 
+                                dolor sit amet, consectetur adipiscing elit. Lorum ipsum dolor sit amet, consectetur adipiscing elit. Lorum ipsum 
+                                dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <p>Cruise Line: ex. Carnival, Royal Caribbean, etc.</p>
+                            <p>Cabin type: ex. Interior, Ocean View, Balcony, Suite</p>
+                            <p>Price: $$$$$$$</p>
+                        </td>
+                    </tr>
+                </table>
+                <table class="cruise hide table">
+                    <tr>
+                        <td rowspan="2" class="table-img"><img src="picture.png" alt="placeholder"></td>
+                        <th colspan="2" class="table-name">Available Cruise</th>
+                        <td rowspan="2" class="option-date">
+                            <h3>Departure Time</h3>
+                            <p >Date: ex. June 1, 2024</p>
+                            <p>Time: ex. 8:00 AM</p>
+                        </td>
+                        <td rowspan="2" class="option-book">
+                            <a href="#">Book Now</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-desc">
+                            <p>
+                                Description of Available Cruise. Lorum ipsum dolor sit amet, consectetur adipiscing elit. Lorum ipsum 
+                                dolor sit amet, consectetur adipiscing elit. Lorum ipsum dolor sit amet, consectetur adipiscing elit. Lorum ipsum 
+                                dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <p>Cruise Line: ex. Carnival, Royal Caribbean, etc.</p>
+                            <p>Cabin type: ex. Interior, Ocean View, Balcony, Suite</p>
+                            <p>Price: $$$$$$$</p>
+                        </td>
+                    </tr>
+                </table>
+                <table class="cruise hide table">
+                    <tr>
+                        <td rowspan="2" class="table-img"><img src="picture.png" alt="placeholder"></td>
+                        <th colspan="2" class="table-name">Available Cruise</th>
+                        <td rowspan="2" class="option-date">
+                            <h3>Departure Time</h3>
+                            <p >Date: ex. June 1, 2024</p>
+                            <p>Time: ex. 8:00 AM</p>
+                        </td>
+                        <td rowspan="2" class="option-book">
+                            <a href="#">Book Now</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-desc">
+                            <p>
+                                Description of Available Cruise. Lorum ipsum dolor sit amet, consectetur adipiscing elit. Lorum ipsum 
+                                dolor sit amet, consectetur adipiscing elit. Lorum ipsum dolor sit amet, consectetur adipiscing elit. Lorum ipsum 
+                                dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <p>Cruise Line: ex. Carnival, Royal Caribbean, etc.</p>
+                            <p>Cabin type: ex. Interior, Ocean View, Balcony, Suite</p>
+                            <p>Price: $$$$$$$</p>
+                        </td>
+                    </tr>
+                </table>
             </section>
             <section>
                 <h2 id="transport">Island Transportation</h2>
+                <table class="table">
+                    <tr>
+                        <td rowspan="2" class="table-img"><img src="picture.png" alt="placeholder"></td>
+                        <th class="table-name">Car Rental</th>
+                        <td rowspan="2" class="table-address">
+                            <h3>Contact Information</h3>
+                            <address>1234 sesame st.</address>
+                            <address>Main town, Tahini, 55555</address>
+                            <br>
+                            <phone>+1 (555) 555 - 5555</phone>
+                        </td>
+                        <td rowspan="2" class="option-book">
+                            <a href="#">Book Now</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-desc">
+                            <p>
+                                Description of Car Rental. Lorum ipsum dolor sit amet, consectetur adipiscing elit. Lorum ipsum 
+                                dolor sit amet, consectetur adipiscing elit. Lorum ipsum dolor sit amet, consectetur adipiscing elit. Lorum ipsum 
+                                dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <p>Rental Company: ex. Hertz, Avis, Enterprise</p>
+                            <p>Vehicle Type: ex. Sedan, SUV, Convertible</p>
+                            <p>Price per day: $$$$$$$</p>
+                        </td>
+                    </tr>
+                </table>
+                <table class="table">
+                    <tr>
+                        <td rowspan="2" class="table-img"><img src="picture.png" alt="placeholder"></td>
+                        <th class="table-name">Bicycle Rental</th>
+                        <td rowspan="2" class="table-address">
+                            <h3>Contact Information</h3>
+                            <address>1234 sesame st.</address>
+                            <address>Main town, Tahini, 55555</address>
+                            <br>
+                            <phone>+1 (555) 555 - 5555</phone>
+                        </td>
+                        <td rowspan="2" class="option-book">
+                            <a href="#">Book Now</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-desc">
+                            <p>
+                                Description of Bicycle Rental. Lorum ipsum dolor sit amet, consectetur adipiscing elit. Lorum ipsum 
+                                dolor sit amet, consectetur adipiscing elit. Lorum ipsum dolor sit amet, consectetur adipiscing elit. Lorum ipsum 
+                                dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <p>Rental Company: ex. Local Bike Shop</p>
+                            <p>Bike Type: ex. Road, Mountain, Hybrid</p>
+                            <p>Price per day: $$$$$$$</p>
+                        </td>
+                    </tr>
+                </table>
+                <table class="table">
+                    <tr>
+                        <td rowspan="2" class="table-img"><img src="picture.png" alt="placeholder"></td>
+                        <th class="table-name">Private Bus Rental</th>
+                        <td rowspan="2" class="table-address">
+                            <h3>Contact Information</h3>
+                            <address>1234 sesame st.</address>
+                            <address>Main town, Tahini, 55555</address>
+                            <br>
+                            <phone>+1 (555) 555 - 5555</phone>
+                        </td>
+                        <td rowspan="2" class="option-book">
+                            <a href="#">Book Now</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-desc">
+                            <p>
+                                Description of Private Bus Rental. Lorum ipsum dolor sit amet, consectetur adipiscing elit. Lorum ipsum 
+                                dolor sit amet, consectetur adipiscing elit. Lorum ipsum dolor sit amet, consectetur adipiscing elit. Lorum ipsum 
+                                dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <p>Rental Company: ex. Local Bus Service</p>
+                            <p>Bus Type: ex. Mini, Coach, Double Decker</p>
+                            <p>Price per day: $$$$$$$</p>
+                        </td>
+                    </tr>
+                </table>
+                <table class="table">
+                    <tr>
+                        <td rowspan="2" class="table-img"><img src="picture.png" alt="placeholder"></td>
+                        <th class="table-name">Public Transportation</th>
+                        <td rowspan="2" class="table-address">
+                            <h3>Contact Information</h3>
+                            <address>1234 sesame st.</address>
+                            <address>Main town, Tahini, 55555</address>
+                            <br>
+                            <phone>+1 (555) 555 - 5555</phone>
+                        </td>
+                        <td rowspan="2" class="option-book">
+                            <a href="#">Bus Schedule</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-desc">
+                            <p>
+                                Description of Public Transportation. Lorum ipsum dolor sit amet, consectetur adipiscing elit. Lorum ipsum 
+                                dolor sit amet, consectetur adipiscing elit. Lorum ipsum dolor sit amet, consectetur adipiscing elit. Lorum ipsum 
+                                dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <p>Rental Company: ex. Local Transit Authority</p>
+                            <p>Bus Type: ex. Mini, Coach, Double Decker</p>
+                            <p>Price per ride: $$$$$$$</p>
+                        </td>
+                    </tr>
+                </table>
             </section>
         </main>
         <footer class="footer-bar">

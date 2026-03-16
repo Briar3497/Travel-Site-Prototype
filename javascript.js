@@ -1,5 +1,7 @@
 const navBarDown = document.querySelector('.nav-bar-down');
 const closeBtn = document.querySelector('.close-btn');
+const flightSearchBtn = document.getElementById('flight-search');
+const cruiseSearchBtn = document.getElementById('cruise-search');
 
 const menuItems = [
     { btn: '.things-to-do', chev: '.things-to-do-chev', opt: '.things-to-do-options' },
@@ -40,3 +42,15 @@ function closeNavBar() {
         item.chev.classList.replace('chevron-up', 'chevron-down');
     });
 }
+
+flightSearchBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const flights = document.querySelectorAll('.flight');
+    flights.forEach(flight => flight.classList.remove('hide'));
+});
+
+cruiseSearchBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const cruises = document.querySelectorAll('.cruise');
+    cruises.forEach(cruise => cruise.classList.remove('hide'));
+});
